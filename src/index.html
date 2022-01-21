@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App </title>
+  </head>
+<body>
+  
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Badge</h2>
+      <div class="badge-widget">
+        <div>
+          <svg width="25" height="24" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M6.3125 2.17773C6.3125 1.52065 6.84292 0.990234 7.5 0.990234C8.15708 0.990234 8.6875 1.52065 8.6875 2.17773V3.10398C11.1733 3.64232 13.0417 5.85898 13.0417 8.51107V13.2611L14.625 14.8444V15.6361H0.375V14.8444L1.95833 13.2611V8.51107C1.95833 5.85898 3.82667 3.64232 6.3125 3.10398V2.17773ZM7.5 4.55273C9.685 4.55273 11.4583 6.32607 11.4583 8.51107V14.0527H3.54167V8.51107C3.54167 6.32607 5.315 4.55273 7.5 4.55273ZM5.92462 16.4357C5.92462 17.3065 6.6292 18.0111 7.50004 18.0111C8.37087 18.0111 9.07546 17.3065 9.07546 16.4357H5.92462Z"
+              fill="#A0AEBD" />
+          </svg>
+        </div>
+      
+        <div class="badge-widget__content" data-overflow-count="10" data-count="99">
+          <div>82</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Pagination</h2>
+      <div class="pagination-widget">
+        <nav class="pagination" actpage="1">
+          <a href="#!-1" class="pagination__arrow">&#8249;</a>
+          <a href="#!1" class="pagination__item is-active">1</a>
+          <a href="#!2" class="pagination__item">2</a>
+          <a href="#!3" class="pagination__item">3</a>
+          <a href="#!4" class="pagination__item">4</a>
+          <a href="#!5" class="pagination__item">5</a>
+          <a href="#!10" class="pagination__item">10</a>
+          <a href="#!+1" class="pagination__arrow">&#8250;</a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Progress</h2>
+
+      <div class="section-block">
+        <h4 class="section-block__title">Linear progress bar</h4>
+        <div class="progress-widget">
+          <div class="progress-widget progress-widget--line" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-widget__text progress-widget__text--left"><span>0%</span></div>
+            <div class="progress-widget-bar">
+              <div class="progress-widget-bar__outer">
+                <div class="progress-widget-bar__inner" style="width: 60%;"></div>
+              </div>
+            </div>
+            <div class="progress-widget__text"><span>60%</span></div>
+          </div>
+        </div>
+        
+        <div class="progress-widget">
+          <div class="progress-widget progress-widget--line" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-widget-bar">
+              <div class="progress-widget-bar__outer">
+                <div class="progress-widget-bar__inner" style="width: 40%;"></div>
+              </div>
+            </div>
+            <div class="progress-widget__text"><span>40%</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block">
+        <h4 class="section-block__title">Internal percentage</h4>
+
+        <div class="progress-widget">
+          <div class="progress-widget progress-widget--line progress-widget--text-inside" role="progressbar" aria-valuenow="70"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-widget-bar">
+              <div class="progress-widget-bar__outer" style="height: 26px;">
+                <div class="progress-widget-bar__inner" style="width: 70%; animation-duration: 3s;">
+                  <div class="progress-widget-bar__innerText"><span>70%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Tag</h2>
+
+      <div class="tag-widget">
+        <span class="el-tag el-tag--default el-tag--light">
+          <span class="el-tag__content">Tag 1</span>
+        </span>
+        <span class="el-tag el-tag--success el-tag--default el-tag--light ml-2">
+          <span class="el-tag__content">Tag 2</span>
+        </span>
+        <span class="el-tag el-tag--warning el-tag--default el-tag--light ml-2">
+          <span class="el-tag__content">Tag 3</span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Switch</h2>
+
+      <div class="section-block">
+        <h4 class="section-block__title">Basic</h4>
+
+        <div class="el-switch el-switch--default is-checked" role="switch" aria-checked="true" aria-disabled="false">
+          <input class="el-switch__input" type="checkbox" name="" true-value="true" false-value="false" >
+          <span class="el-switch__core" style="width: 40px;">
+            <div class="el-switch__action"></div>
+          </span>
+        </div>
+
+        <div class="el-switch el-switch--default" role="switch" aria-checked="false" aria-disabled="false">
+          <input class="el-switch__input" type="checkbox" name="" true-value="true" false-value="false">
+          <span class="el-switch__core" style="width: 40px;">
+            <div class="el-switch__action"></div>
+          </span>
+        </div>
+      </div>
+
+      <div class="section-block">
+        <h4 class="section-block__title">Disabled</h4>
+      
+        <div class="el-switch el-switch--default is-disabled is-checked" role="switch" aria-checked="false" aria-disabled="false">
+          <input class="el-switch__input" type="checkbox" name="" true-value="true" false-value="false">
+          <span class="el-switch__core" style="width: 40px;">
+            <div class="el-switch__action"></div>
+          </span>
+        </div>
+      
+        <div class="el-switch el-switch--default is-disabled" role="switch" aria-checked="false" aria-disabled="false">
+          <input class="el-switch__input" type="checkbox" name="" true-value="true" false-value="false">
+          <span class="el-switch__core" style="width: 40px;">
+            <div class="el-switch__action"></div>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Read More | Less</h2>
+
+      <div class="read-more" data-more>
+        <div class="read-more__content" data-more-content data-more-height="150" style="height: 150px">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni vero velit nulla fuga? Facere ipsum eligendi excepturi, hic iure optio sequi sit delectus! Rerum, sapiente? Corporis sit minus maiores vitae obcaecati omnis amet iure ipsam consequuntur consequatur optio ex, exercitationem doloribus cumque illum at quae odit vero! Voluptas explicabo similique reprehenderit fugit velit consectetur. Atque vel asperiores quo ab nostrum iure, repellendus laborum, excepturi eum officia soluta at deserunt id? Non est, tempora dolores explicabo iure fuga temporibus hic optio ipsam ea maiores totam. Dolore, possimus impedit vitae numquam laborum minima harum velit dolorem odit, quisquam quam earum, nam temporibus provident ipsum consectetur! Adipisci architecto voluptate mollitia veritatis officia totam incidunt, soluta sit reprehenderit ad commodi earum rem nam, possimus, veniam voluptatem fugiat in ab illo. Suscipit perspiciatis ex nesciunt officiis recusandae, iusto veritatis quaerat, soluta quasi distinctio amet at reprehenderit corporis minima quis obcaecati consectetur, enim aspernatur dolorum fuga molestias officia? Quis eos consectetur illum tempora quia aut harum doloremque illo rerum eveniet! Sequi reiciendis culpa dolores soluta nesciunt mollitia optio dolorum ad ipsam tenetur? Voluptatibus numquam, dolores totam et voluptates consectetur alias. Vero enim sapiente a tempora quis, laborum animi, nesciunt nihil fugit quaerat cupiditate! Ipsa laudantium autem aut porro placeat quisquam, minus explicabo quam id dolores ad? Aliquid doloremque non dolore, nesciunt quasi ex perferendis in necessitatibus. Corrupti reiciendis adipisci nihil id qui numquam excepturi pariatur, sint ipsa odit quo. Quod sequi nobis blanditiis repellendus magnam perspiciatis incidunt nulla! Illum facere dolorum, corrupti qui aliquid possimus laboriosam!
+        </div>
+      
+        <div class="read-more__footer" data-more-footer>
+          <a href="#" class="read-more__btn" data-more-trigger data-more-text-more="Read more"
+            data-more-text-less="Read less">
+            Read more
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Avatar</h2>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Button</h2>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Input</h2>
+
+      <div class="section__block" style="width: 600px;">
+        <h4 class="section__block-title">Basic</h4>
+      
+        <div class="el-input">
+          <input type="text" class="el-input__inner" placeholder="Enter you e-mail">
+        </div>
+      </div>
+
+      <div class="section__block" style="width: 600px;">
+        <h4 class="section__block-title">Floating Label</h4>
+
+        <div class="el-input el-input--floating-label">
+          <input type="text" class="el-input__inner" placeholder="Enter you e-mail">
+          <label class="el-input__label">Enter you e-mail</label>
+        </div>
+
+      </div>
+
+      <div class="section__block" style="width: 600px;">
+        <h4 class="section__block-title">Feedback</h4>
+        
+        <fieldset>
+          <div class="el-input el-input--floating-label">
+            <input type="email" class="el-input__inner" value="assda" placeholder="Enter you e-mail">
+            <label class="el-input__label">Enter you password</label>
+            <span class="el-input__message el-input__message--error">Email must be valid</span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="el-input el-input--floating-label">
+            <input type="password" class="el-input__inner" value="1234567890" placeholder="Enter you e-mail">
+            <label class="el-input__label">Enter you password</label>
+            <span class="el-input__message el-input__message--success">Password is valid</span>
+          </div>
+        </fieldset>
+      
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Textarea</h2>
+
+      <div class="textareas" style="width: 600px;">
+        <div class="section-block">
+          <h4 class="section-block__title">Basic</h4>
+          <div class="el-textarea el-input--default">
+            <textarea class="el-textarea__inner" autocomplete="off" placeholder="Please input"
+              style="min-height: 54px; height: 110px;"></textarea>
+          </div>
+        </div>
+
+        <div class="section-block">
+          <h4 class="section-block__title">Accessible length</h4>
+          <div class="el-textarea el-input--default">
+          <textarea class="el-textarea__inner" data-counter-label="{remaining} / {maxlength}" maxlength="30" autocomplete="off" placeholder="Please input"
+            style="min-height: 33px; height: 172px;"></textarea>
+          </div>
+        </div>
+
+        <div class="section-block">
+          <h4 class="section-block__title">Limit length</h4>
+          <div class="el-textarea el-input--default">
+            <textarea class="el-textarea__inner" data-counter-label="{length} / {maxlength}" maxlength="30"
+              autocomplete="off" placeholder="Please input" style="min-height: 33px; height: 172px;"></textarea>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Checkbox</h2>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Radio Button</h2>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Breadcrumbs</h2>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Tabs</h2>
+
+      <div id="tabs" class="tab explore-banking__tabs">
+        <div class="explore-banking__tabs-header">
+          <div class="tab__list">
+            <div class="tab__item">Tab 1</div>
+            <div class="tab__item">Tab 2</div>
+            <div class="tab__item">Tab 3</div>
+          </div>
+        </div>
+      
+        <div class="tab__content">
+          <div class="tab__content-item tab">
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вершину, рыбными журчит если сбить залетают сих взобравшись всеми заголовок он по всей. Взгляд, большой продолжил.</p>
+          </div>
+      
+          <div class="tab__content-item tab">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio explicabo error porro nisi fugit pariatur
+              dolor quae adipisci facilis. Mollitia, veritatis. Labore, optio pariatur nostrum voluptate quia eius quam esse
+              dolor atque aperiam illum deserunt eaque officiis veniam beatae fugiat provident commodi possimus dolorem animi
+              adipisci necessitatibus consectetur error tenetur.</p>
+          </div>
+      
+          <div class="tab__content-item tab">
+            Tab 3
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Loading</h2>
+<!-- 
+      <div class="el-overlay"></div> -->
+
+      
+
+      <div class="section__block">
+        <h4 class="section__block-title">Fullscreen Loading</h4>
+
+        <button class="btn el-loading el-loading--fullscreen">Fullscreen Loading</button>
+      </div>
+
+      <div class="section__block">
+        <h4 class="section__block-title">Content Block Loading</h4>
+
+        <div class="block-loading" style="width: 600px; height: 400px; border: 1px solid #ccc; border-radius: 4px;">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos eligendi laudantium quos inventore aut tenetur temporibus, magnam, ad vitae quisquam saepe at pariatur necessitatibus maxime impedit nobis odio magni, blanditiis praesentium repellendus asperiores eaque. Sit mollitia maiores delectus blanditiis harum ullam! Corporis odio officia praesentium neque? Similique porro modi nesciunt?
+        </div>
+      
+        <button class="btn el-loading el-loading--content">Content Loading</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Notification</h2>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Steps</h2>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Modal</h2>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Drawer</h2>
+
+      <div class="drawer-widget" data-drawer-trigger aria-controls="drawer-name" aria-expanded="false">
+        Click to open
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+      <h2 class="section__title">Scroll To Top</h2>
+    </div>
+  </section>
+
+<!-- <ul>
+  <li>
+    <div class="checkbox">
+      <input id="c1" type="checkbox">
+      <label for="c1">Checkbox</label>
+    </div>
+  </li>
+  <li>
+    <div class="checkbox">
+      <input id="c2" type="checkbox" checked>
+      <label for="c2">Checkbox Checked</label>
+    </div>
+  </li>
+
+
+  <li>
+    <div class="radio-btn">
+      <input id="r1" type="radio" name="radio" value="1">
+      <label for="r1">Radio</label>
+    </div>
+  </li>
+  <li>
+    <div class="radio-btn">
+      <input id="r2" type="radio" name="radio" value="2" checked>
+      <label for="r2">Radio Active</label>
+    </div>
+  </li>
+
+
+  <li>
+    <div class="switch-btn">
+      <input id="s1" type="checkbox" class="switch">
+      <label for="s1">Switch</label>
+    </div>
+  </li>
+  <li>
+    <div class="switch-btn">
+      <input id="s2" type="checkbox" class="switch" checked>
+      <label for="s2">Switch Checked</label>
+    </div>
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <div class="checkbox">
+      <input id="c1d" type="checkbox" disabled>
+      <label for="c1d">Checkbox Disabled</label>
+    </div>
+  </li>
+  <li>
+    <div class="checkbox">
+      <input id="c2d" type="checkbox" checked disabled>
+      <label for="c2d">Checkbox Checked Disabled</label>
+    </div>
+  </li>
+
+  <li>
+    <div class="radio-btn">
+      <input id="r1d" type="radio" name="radio" value="1" disabled>
+      <label for="r1d">Radio Disabled</label>
+    </div>
+  </li>
+  <li>
+    <div class="radio-btn">
+      <input id="r2d" type="radio" name="radio" value="2" checked disabled>
+      <label for="r2d">Radio Checked Disabled</label>
+    </div>
+  </li>
+
+
+  <li>
+    <div class="switch-btn">
+      <input id="s1d" type="checkbox" class="switch" disabled>
+      <label for="s1d">Switch</label>
+    </div>
+  </li>
+  <li>
+    <div class="switch-btn">
+      <input id="s2d" type="checkbox" class="switch" checked disabled>
+      <label for="s2d">Switch</label>
+    </div>
+  </li>
+</ul> -->
+
+
+
+
+  <div class="drawer__trigger" data-drawer-trigger aria-controls="drawer-name" aria-expanded="false">
+    <i></i>
+  </div>
+
+  <section class="drawer" id="drawer-name" data-drawer-target>
+    <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+    <div class="drawer__wrapper">
+      <div class="drawer__header">
+        <div class="drawer__title">
+          Site Navigation
+        </div>
+        <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
+      </div>
+      <div class="drawer__content">
+
+        <ul class="drawer__list">
+          <li class="drawer__list-item"><a href="/compare.html" class="drawer__link">Compare</a></li>
+          <li class="drawer__list-item"><a href="/compare.html" class="drawer__link">Search</a></li>
+          <li class="drawer__list-item"><a href="/compare.html" class="drawer__link">Result</a></li>
+          <li class="drawer__list-item"><a href="/compare.html" class="drawer__link">Calculators</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+$el-tab-active-color: #409eff !default;
+$el-tab-color: #c0c4cc !default;
+
+.tab {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    border-bottom: 1px solid $el-tab-active-color;
+    overflow-y: hidden;
+  }
+
+  &__item {
+    width: 33.333%;
+    flex-shrink: 0;
+    border-bottom: none;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 0 !important;
+    padding: 0 0 16px 0;
+    color: $el-tab-color;
+    font-size: 18px;
+
+    &.is--active {
+      font-weight: 600;
+      position: relative;
+      color: $el-tab-active-color;
+      border-bottom: 4px solid $el-tab-active-color;
+    }
+  } 
+
+  &__content {
+    &-item {
+      display: none;
+      animation: fadeIn .5s cubic-bezier(0.0, 0.0, 0.2, 1);
+
+      &.is--active {
+        display: block;
+        // animation: fadeOut .5s cubic-bezier(0.0, 0.0, 0.2, 1);
+      }        
+    }
+  }
+}  
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+
+// .el-overlay {
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   z-index: 200;
+//   opacity: .4;
+//   transition: opacity 0.3s;
+//   will-change: opacity;
+//   background-color: #000;
+//   -webkit-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+// }

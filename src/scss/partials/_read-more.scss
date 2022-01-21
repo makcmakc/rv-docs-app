@@ -1,0 +1,45 @@
+.read-more {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.read-more__content {
+  overflow: hidden;
+  transition: height .3s;
+}
+
+.read-more__footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  // background-color: rgba(255, 255, 255, 1);
+  background-color: #F6F8FF;
+}
+
+.read-more__btn {
+  text-decoration: none;
+  color: #8A91B4;
+}
+
+.read-more__btn:hover {
+  color: #222;
+}
+
+.read-more__footer:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  top: -80px;
+  left: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(246, 248, 255, 1) 100%);
+  transition: opacity .3s;
+}
+
+.read-more.is-active .read-more__footer:before {
+  opacity: 0;
+  display: none;
+}

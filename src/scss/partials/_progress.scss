@@ -1,0 +1,84 @@
+@use "../utils/mixins" as m;
+
+
+$progress-text-color: #616367 !default;
+$progress-background-color: #ebeef5 !default;
+$progress-color: #409eff !default;
+$progress-bar-radius: 100px !default;
+$progress-bar-height: 6px !default;
+
+// Demo
+.progress-widget {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.progress-widget {
+  position: relative;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+
+  &-bar {
+    flex-grow: 1;
+    box-sizing: border-box;
+
+    &__outer {
+      height: $progress-bar-height;
+      border-radius: $progress-bar-radius;
+      background-color: $progress-background-color;
+      overflow: hidden;
+      position: relative;
+      vertical-align: middle;
+    }
+
+    &__inner {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background-color: $progress-color;
+      text-align: right;
+      border-radius: $progress-bar-radius;
+      line-height: 1;
+      white-space: nowrap;
+      transition: width .6s ease;
+      animation-duration: 3s;
+    }
+
+    &__inner::after {
+      display: inline-block;
+      content: "";
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    color: $progress-text-color;
+    margin-left: 5px;
+    min-width: max-content;
+    // min-width: 50px;
+    line-height: 1;
+
+    &--left {
+      margin-right: 5px;
+      margin-left: 0;
+    }
+  }
+
+  // Internal percentage
+  &--text-inside .progress-widget-bar {
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  &-bar__innerText {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 12px;
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #8A91B4;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  background: #F6F8FF;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 50px;
+}

@@ -1,0 +1,25 @@
+$badge-background: #409eff !default;
+$badge-color: #FFFFFF !default;
+
+.badge-widget {
+  position: relative;
+  display: inline-block;
+
+  &__content {
+    position: absolute;
+    transition: .3s cubic-bezier(.4,0,.2,1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -16px;
+    top: -10px;
+    font-size: 10px;
+    font-style: normal;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    color: $badge-color;
+    pointer-events: none;
+    background-color: $badge-background;
+  }
+}

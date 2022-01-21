@@ -1,0 +1,54 @@
+$el-input-border-color: #ebeef5 !default;
+$el-input-border: #dcdfe6 !default;
+$el-input-bg-color: transparent;
+$el-input-hover-border: #c0c4cc !default;
+$el-input-border-radius: 4px !default;
+$el-transition-border: .3s !default;
+$el-input-focus-border: #409eff !default;
+$el-input-text-color: #616367 !default;
+
+.el-textarea {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: bottom;
+  font-size: var(--el-font-size-base);
+
+  &__inner {
+    display: block;
+    resize: vertical;
+    padding: 5px 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    color: $el-input-text-color;
+    background-color: $el-input-bg-color;
+    background-image: none;
+    border: 1px solid $el-input-border-color;
+    border-radius: $el-input-border-radius;
+    transition: $el-transition-border;
+  }
+
+  &__inner {
+    &:focus {
+      outline: none;
+      border-color: $el-input-focus-border !important;
+    }
+
+    &:hover {
+      border-color: $el-input-hover-border;
+    }
+  }
+}
+
+.el-textarea .el-input__count {
+  color: $el-input-hover-border;
+  background: #fff;
+  position: absolute;
+  font-size: 12px;
+  line-height: 14px;
+  bottom: 5px;
+  right: 10px;
+}
